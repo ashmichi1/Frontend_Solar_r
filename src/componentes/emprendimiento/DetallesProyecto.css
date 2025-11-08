@@ -1,0 +1,149 @@
+/* 🎨 Paleta Vite */
+:root {
+  --azul-principal: #4498fa;
+  --verde-acento: #47b3a3;
+  --rosado-acento: #f589f0;
+  --gris-bg: #f5f7fa;
+  --gris-borde: #d1d1d1;
+  --texto-principal: #213547;
+}
+
+/* 🧱 Contenedor principal */
+.detalle-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  background-color: var(--gris-bg);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 3px 20px rgba(68, 152, 250, 0.15);
+  font-family: "Montserrat", sans-serif;
+  color: var(--texto-principal);
+}
+
+/* 🔙 Botón volver */
+.volver-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--azul-principal);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.volver-btn:hover {
+  color: var(--rosado-acento);
+}
+
+/* 🔹 Título */
+.titulo-detalle {
+  color: var(--azul-principal);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* 🧩 Secciones */
+.seccion {
+  background: #ffffff;
+  border: 2px solid var(--verde-acento);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(68, 152, 250, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.seccion:hover {
+  transform: translateY(-3px);
+}
+
+/* 📘 Subtítulos */
+.subtitulo {
+  font-size: 1.3rem;
+  color: var(--verde-acento);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--azul-principal);
+  padding-left: 10px;
+}
+
+/* 📊 Grid datos */
+.grid-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.columna-izquierda p {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.sub-subtitulo {
+  color: var(--azul-principal);
+  margin-bottom: 0.5rem;
+}
+
+/* 📋 Listas */
+.lista-pasos {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.lista-pasos li {
+  margin-bottom: 0.4rem;
+}
+
+/* 📋 Tabla de recursos */
+.tabla-recursos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.tabla-recursos th {
+  background-color: var(--azul-principal);
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+.tabla-recursos td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+}
+
+.tabla-recursos tbody tr:hover {
+  background-color: rgba(71, 179, 163, 0.15);
+}
+
+.footer-total {
+  font-weight: bold;
+  text-align: right;
+  background-color: var(--gris-bg);
+  padding: 8px;
+}
+
+.footer-total-valor {
+  font-weight: bold;
+  color: var(--rosado-acento);
+  background-color: var(--gris-bg);
+  padding: 8px;
+}
+
+/* ⚙️ Tecnologías */
+.lista-tecnologias {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.lista-tecnologias li {
+  margin-bottom: 0.4rem;
+}
+
+.tipo-tecnologia {
+  color: var(--verde-acento);
+  font-style: italic;
+}

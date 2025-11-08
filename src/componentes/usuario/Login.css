@@ -1,0 +1,123 @@
+
+.login-container {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;             
+  background-image: url('../assets/fondo-solar.png'); 
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- TARJETA DE LOGIN --- */
+.login-card {
+  width: 380px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  border: 3px solid #47b3a3;
+  box-shadow: 0 6px 20px rgba(68, 152, 250, 0.25);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+}
+
+/* --- TÍTULOS Y TEXTOS --- */
+.login-logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #4498fa;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #47b3a3;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+/* --- INPUTS --- */
+.form-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #213547;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #cbd5e1;
+  outline: none;
+  transition: 0.2s ease;
+  background: #f9fafb;
+}
+
+.input:focus {
+  border-color: #4498fa;
+  box-shadow: 0 0 6px rgba(68, 152, 250, 0.5);
+}
+
+.input.error {
+  border-color: #e63946;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #e63946;
+  margin-top: 4px;
+}
+
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4498fa, #47b3a3);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #47b3a3, #f589f0);
+  box-shadow: 0 4px 10px rgba(68, 152, 250, 0.4);
+}
+
+.btn-login:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+}
+
+
+.register-text {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #213547;
+}
+
+.register-link {
+  margin-left: 6px;
+  color: #f589f0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+  color: #4498fa;
+}

@@ -1,0 +1,140 @@
+:root {
+  --color-primary: #4498fa;
+  --color-secondary: #f589f0;
+  --color-success: #4aeb65;
+}
+
+/* 🔹 Fondo y centrado total */
+.terminos-wrapper {
+  min-height: 100vh;
+  background: #F5F7FA;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ✅ centra vertical y horizontal */
+  padding: 40px 20px;
+}
+
+/* 🔹 Tarjeta blanca centrada */
+.terminos-card {
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  border: 2px solid #E5E7EB;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  margin: 0 auto; /* ✅ asegura el centrado */
+}
+
+/* ✅ Títulos centrados */
+.terminos-title {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.terminos-subtitle {
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+/* ✅ Contenido alineado a la izquierda */
+.terminos-content {
+  text-align: left !important;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* ✅ Encabezados */
+.terminos-content h2 {
+  text-align: left !important;
+  margin-top: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.terminos-content p,
+.terminos-content li {
+  color: #4B5563;
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.terminos-content ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  list-style: disc;
+}
+
+/* ✅ Pie de página */
+.terminos-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* 🔹 Botón rojo volver */
+.terminos-back-btn {
+  padding: 10px 20px;
+  background:#47b3a3;;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.terminos-back-btn:hover {
+  background: #47b3a3;
+}
+
+/* ✅ Bloque checkbox */
+.aceptacion-box {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.aceptacion-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.aceptacion-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary); /* ✅ color principal */
+}
+
+/* ✅ Botón Continuar */
+.terminos-continue-btn {
+  margin-left: 10px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  transition: .2s;
+}
+
+.terminos-continue-btn.enabled {
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.terminos-continue-btn.enabled:hover {
+  background: var(--color-secondary);
+}
+
+.terminos-continue-btn.disabled {
+  background: #c4c4c4;
+  color: #6b6b6b;
+  cursor: not-allowed;
+}

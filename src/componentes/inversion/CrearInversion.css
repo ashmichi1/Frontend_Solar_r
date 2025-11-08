@@ -1,0 +1,39 @@
+.form-inversion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 1rem;
+  background: white;
+  border: 1px solid var(--vite-border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.form-inversion label {
+  font-weight: 600;
+  color: var(--vite-violet);
+}
+
+.form-inversion input {
+  padding: 10px;
+  border: 1px solid var(--vite-border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn-registrar {
+  background-color: var(--vite-purple);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.btn-registrar:hover {
+  background-color: var(--vite-violet);
+  transform: translateY(-2px);
+}

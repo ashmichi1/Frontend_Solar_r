@@ -1,0 +1,117 @@
+/* 🎨 Paleta unificada con el resto del sitio */
+:root {
+  --color-azul: #4498fa;
+  --color-verde: #47b3a3;
+  --color-rosado: #f589f0;
+  --color-gris-fondo: #f9fafb;
+  --color-borde: #d1d5db;
+  --color-texto: #1e1e28;
+}
+
+/* 🧱 Contenedor principal */
+.detalle-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  background-color: var(--color-gris-fondo);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Inter", sans-serif;
+  color: var(--color-texto);
+}
+
+/* 🔹 Título */
+.titulo-detalle {
+  color: var(--color-azul);
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+/* 🔍 Filtro */
+.filtro-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filtro-label {
+  font-weight: 600;
+  color: var(--color-verde);
+}
+
+.filtro-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  outline: none;
+  background-color: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.filtro-select:focus {
+  border-color: var(--color-azul);
+}
+
+/* 📦 Sección */
+.seccion {
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-verde);
+  border-left: 6px solid var(--color-azul);
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+/* 📊 Tabla de recursos */
+.tabla-recursos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.tabla-recursos th {
+  background-color: var(--color-azul);
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+.tabla-recursos td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.tabla-recursos tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* 💰 Botón de inversión */
+.btn-invertir {
+  background: linear-gradient(90deg, var(--color-azul), var(--color-rosado));
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-invertir:hover {
+  background: linear-gradient(90deg, var(--color-verde), var(--color-azul));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(68, 152, 250, 0.3);
+}

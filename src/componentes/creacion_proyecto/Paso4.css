@@ -1,0 +1,15 @@
+.recurso-card {
+  background: white;
+  border: 1px solid var(--vite-border);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.recurso-header {
+  font-weight: 600;
+  color: var(--vite-purple);
+  margin-bottom: 8px;
+  border-left: 4px solid var(--vite-purple);
+  padding-left: 8px;
+}

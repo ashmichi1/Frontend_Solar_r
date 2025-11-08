@@ -1,0 +1,31 @@
+:root {
+  --vite-purple: #4498fa;;
+  --vite-violet: #f589f0;
+  --vite-border: #47b3a3;
+}
+
+.paso3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paso3-label {
+  font-weight: 600;
+  color: var(--vite-violet);
+}
+
+/* react-select styled */
+.vite-select__control {
+  border-radius: 8px !important;
+  border: 1px solid var(--vite-border) !important;
+}
+
+.vite-select__multi-value {
+  background: var(--vite-purple) !important;
+  color: white;
+}
+
+.vite-select__multi-value__label {
+  color: white;
+}

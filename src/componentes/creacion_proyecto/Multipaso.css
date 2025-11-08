@@ -1,0 +1,141 @@
+
+:root {
+  --blue: #4895ef;
+  --pink: #f72585;
+  --green: #4cc9f0;
+  --error: #e63946;
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+.mp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../assets/bg-login.png") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.mp-box {
+  background: rgba(255, 255, 255, 0.95);
+  width: 600px;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  animation: fadeSlide 0.5s ease forwards;
+}
+
+/* ===== Título con degradado ===== */
+.mp-title {
+  background: linear-gradient(90deg, var(--blue), var(--pink), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* ===== Subtítulo o paso ===== */
+.mp-step {
+  color: var(--pink);
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ===== Inputs ===== */
+.form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mp-input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.mp-input:focus {
+  border-color: var(--blue);
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(68, 152, 250, 0.2);
+}
+
+.mp-input.error {
+  border-color: var(--error) !important;
+}
+
+.error-text {
+  font-size: 0.85rem;
+  color: var(--error);
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+
+
+.mp-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.25s ease;
+  color: white;
+}
+
+/* ===== Botones con degradados ===== */
+.btn-primary {
+  background: linear-gradient(90deg, var(--blue), var(--pink));
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--pink), var(--green));
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #bbb;
+}
+
+.btn-secondary:hover {
+  background: #999;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, var(--pink), var(--blue));
+}
+
+/* ===== Animación suave ===== */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
