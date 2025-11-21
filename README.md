@@ -68,7 +68,7 @@ export default tseslint.config([
 ])
 ```
 
-##Personal-Software-Process
+Personal-Software-Process
 About this repository
 Repository to store my solutions for the Personal Software Process assignments.
 
